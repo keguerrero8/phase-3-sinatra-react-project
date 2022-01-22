@@ -1,0 +1,18 @@
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/digest-3.1.0/ext/digest/sha2
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220118-36950-1wsesm8.rb extconf.rb
+checking for u_int8_t... yes
+checking for sys/cdefs.h... yes
+creating Makefile
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\= clean
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\=
+compiling sha2init.c
+compiling sha2.c
+linking shared-object digest/sha2.bundle
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 sha2.bundle ./.gem.20220118-36950-1krbawx/digest

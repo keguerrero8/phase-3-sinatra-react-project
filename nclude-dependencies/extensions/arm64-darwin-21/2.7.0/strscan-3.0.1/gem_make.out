@@ -1,0 +1,47 @@
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/strscan-3.0.1/ext/strscan
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220118-36950-1eg1ftn.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\= clean
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\=
+compiling strscan.c
+strscan.c:244:26: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+strscan.c:244:26: note: '{' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+strscan.c:244:26: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+strscan.c:244:26: note: ')' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+2 warnings generated.
+linking shared-object strscan.bundle
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/strscan-3.0.1/ext/strscan
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 strscan.bundle ./.gem.20220118-36950-528tiq

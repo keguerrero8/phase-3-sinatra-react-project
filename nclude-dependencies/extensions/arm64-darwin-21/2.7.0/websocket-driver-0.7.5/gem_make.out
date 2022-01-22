@@ -1,0 +1,15 @@
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/austinfitzhugh/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220118-36950-1uobva5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/austinfitzhugh/Desktop/phase-3-sinatra-react-project/nclude-dependencies/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20220118-36950-1lfemru
