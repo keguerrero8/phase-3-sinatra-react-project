@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2022_01_24_203551) do
     t.integer "conversation_id"
     t.string "message"
     t.date "creation_date"
+    t.integer "sender_id"
+    t.integer "receiver_id"
   end
 
   create_table "restaurants", force: :cascade do |t|

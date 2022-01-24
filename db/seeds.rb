@@ -26,11 +26,12 @@ Conversation.create(user_id:1, user_two_id:2, name: "Devon Ricks" , message: "I 
 Conversation.create(user_id:1, user_two_id:3, name: "Daniela Rivas" , message: "2:00PM? Saturday?", timestamp: "30 minutes ago" , profilepic:"https://i.pinimg.com/280x280_RS/5b/f1/49/5bf149cbcdcbd4b04abf9891d1b564b8.jpg" )
 
 puts "Creating Chat Message..."
-Message.create(conversation_id:1, message:"Testing user1 to user2 in convo1", creation_date: Faker::Time.backward(days:1) )
-Message.create(conversation_id:1, message:"Testing user1 to user2 in convo1", creation_date: Faker::Time.backward(days:1) )
-Message.create(conversation_id:2, message:"Testing user1 to user3", creation_date: Faker::Time.backward(days:1) )
-Message.create(conversation_id:2, message:"Testing user1 to user3", creation_date: Faker::Time.backward(days:1) )
-Message.create(conversation_id:2, message:"Testing user1 to user3", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:1, sender_id: 1 , receiver_id: 2, message:"You pressed like on a Steakhouse? I thought you were Vegan!", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:1,  sender_id: 2, receiver_id: 1,  message:"I thought they had that great salad option...", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:1,  sender_id: 2, receiver_id: 1,  message:"I can't remember what's on their menu?", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:2,  sender_id: 1, receiver_id: 3,  message:"I am ok with Burger King or Orofino's?", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:2,  sender_id: 3, receiver_id: 1,  message:"Orofino's!", creation_date: Faker::Time.backward(days:1) )
+Message.create(conversation_id:2,  sender_id: 3, receiver_id: 1,  message:"2:00PM? Saturday?", creation_date: Faker::Time.backward(days:1) )
 
 
 puts "✅ Done seeding!"

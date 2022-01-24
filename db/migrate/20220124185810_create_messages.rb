@@ -4,6 +4,8 @@ class CreateMessages < ActiveRecord::Migration[6.1]
       t.integer :conversation_id
       t.string :message
       t.date :creation_date
+      t.integer :sender_id
+      t.integer :receiver_id
     end
   end
 end
