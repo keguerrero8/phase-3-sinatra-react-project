@@ -87,4 +87,23 @@ class ApplicationController < Sinatra::Base
     like.to_json
   end
 
+  get '/conversations' do
+    conversations = Conversation.all
+    conversations.to_json
+  end
+
+  get "/conversations/:id" do
+    conversation = Conversation.find(params[:id])
+    conversation.to_json
+  end
+
+  get '/messages' do
+    messages = Message.all
+    messages.to_json
+  end
+
+  get "/messages/:conversation_id" do
+    messages = Message.where(conversation_id: params[:conversation_id])
+    messages.to_json
+  end
 end

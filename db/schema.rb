@@ -10,12 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_21_223201) do
+ActiveRecord::Schema.define(version: 2022_01_24_203551) do
+
+  create_table "conversations", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "user_two_id"
+    t.string "name"
+    t.string "message"
+    t.string "timestamp"
+    t.string "profilepic"
+  end
 
   create_table "likes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "restaurant_id"
     t.boolean "super_like"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.integer "conversation_id"
+    t.string "message"
+    t.date "creation_date"
   end
 
   create_table "restaurants", force: :cascade do |t|
