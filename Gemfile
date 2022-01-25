@@ -36,6 +36,8 @@ gem "require_all", "~> 3.0"
 
 gem "faker"
 
+# gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+
 # These gems will only be used when we are running the application locally
 group :development do
   gem "pry", "~> 0.14.1"

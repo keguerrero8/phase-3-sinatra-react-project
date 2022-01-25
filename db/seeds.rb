@@ -8,6 +8,8 @@ puts "Creating Users..."
 User.create(first_name: "Gerry", last_name: "Mazsloff", email:"gerry@mazsloff.org", password:"12345", avatar_url: "https://optimalw.com/wp-content/uploads/2015/10/sample-avatar.jpg")
 User.create(first_name: "Devon", last_name: "Ricks", email: "nevergonnagive@you.up", password:"12345", avatar_url: "https://numberily.com/wp-content/uploads/2019/04/Devyn-Kohl.jpg")
 User.create(first_name: "Daniela", last_name: "Rivas", email: "daniela@you.up", password:"12345", avatar_url: "https://i.pinimg.com/280x280_RS/5b/f1/49/5bf149cbcdcbd4b04abf9891d1b564b8.jpg")
+
+puts "Creating Restaurants..."
 Restaurant.create(name:"Taco Bell", details: "Tasty food.", picture_url:
 "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrobible.com%2Fwp-content%2Fuploads%2F2020%2F07%2FiStock-458272681.jpg&f=1&nofb=1")
 Restaurant.create(name:"Burger King", details:"Burgers and Fries.", picture_url:"https://www.sickchirpse.com/wp-content/uploads/2020/04/BK.jpg")

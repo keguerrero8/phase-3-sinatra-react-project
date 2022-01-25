@@ -106,4 +106,25 @@ class ApplicationController < Sinatra::Base
     messages = Message.where(conversation_id: params[:conversation_id])
     messages.to_json
   end
+
+  post '/messages' do
+    message = Message.create(
+      conversation_id: params[:conversation_id],
+      sender_id: params[:sender_id],
+      receiver_id: params[:receiver_id],
+      message: params[:message],
+      creation_date: params[:creation_date]
+    )
+    message.to_json
+  end
+
+
+  delete '/messages/:id' do
+    # find the review using the ID
+    message = Message.find(params[:id])
+    # delete the review
+    message.destroy
+    # send a response with the deleted review as JSON
+    message.to_json
+  end
 end
