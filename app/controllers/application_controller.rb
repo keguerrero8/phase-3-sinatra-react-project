@@ -80,7 +80,7 @@ class ApplicationController < Sinatra::Base
 
   post '/likes' do
     like = Like.create(
-        user_id: 1,
+        user_id: params[:user_id],
         restaurant_id:params[:restaurant_id],
         super_like: false 
       )
