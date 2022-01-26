@@ -6,9 +6,12 @@ class ApplicationController < Sinatra::Base
     { message: "Good luck with your project! TestingAustin" }.to_json
   end
 
-  get "/matches" do
-      matches = Restaurant.all.map do |restaurant|
-        (restaurant.matched) ? restaurant.name : false
+  get "/matches" do #go through
+      # matches = Restaurant.all.map do |restaurant|
+      #   (restaurant.matched) ? restaurant.name : false
+      # end
+      matches = Restaurant.all.filter do |restaurant|
+        restaurant.matched
       end
       matches.to_json
   end
