@@ -7,9 +7,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/matches" do #go through
-      # matches = Restaurant.all.map do |restaurant|
-      #   (restaurant.matched) ? restaurant.name : false
-      # end
       matches = Restaurant.all.filter do |restaurant|
         restaurant.matched
       end

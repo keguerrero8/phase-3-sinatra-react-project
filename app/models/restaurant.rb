@@ -4,8 +4,9 @@ has_many :users, through: :likes
 
   
 def matched
-   (self.likes.count >= 2) ? true : false
-
+   if self.likes.find_by(user_id: 1) && self.likes.find_by(user_id: 2)
+    return true
+   end
+   false
   end
-
 end
